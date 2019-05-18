@@ -14,7 +14,7 @@ BOT_NAME = 'jdbook'
 SPIDER_MODULES = ['jdbook.spiders']
 NEWSPIDER_MODULE = 'jdbook.spiders'
 
-LOG_LEVEL = "WARNING"
+# LOG_LEVEL = "WARNING"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36'
 

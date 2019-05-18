@@ -4,10 +4,12 @@ import re
 from copy import deepcopy
 import json
 from ..items import JdbookItem
-class BookSpider(scrapy.Spider):
+from scrapy_redis.spiders import RedisSpider
+class BookSpider(RedisSpider):
     name = 'book'
     allowed_domains = ['jd.com']
-    start_urls = ['https://book.jd.com/booksort.html']
+    redis_key = "jd_book"
+    # start_urls = ['https://book.jd.com/booksort.html']
 
     def parse(self, response):
         # 分组
